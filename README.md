@@ -178,19 +178,7 @@ http://localhost:3000
 
 ---
 
-# Environment Variables
 
-Create a `.env.local` file.
-
-```env
-GOOGLE_API_KEY=
-
-SUPABASE_URL=
-
-SUPABASE_ANON_KEY=
-```
-
----
 
 # Team
 
