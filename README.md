@@ -1,13 +1,12 @@
 <div align="center">
 
-# EduVaani
+# EduArtha
 
-### Understand English. Learn in Your Own Language.
+### Understand English. Learn with Clarity.
 
-An AI-powered multilingual educational assistant built with **Google Gemma 4** that helps learners understand educational content through simple, concept-based explanations instead of literal translations.
+EduArtha is an AI-powered educational assistant that transforms complex English educational content into simple, easy-to-understand Hindi explanations using **Google's Gemma 4**.
 
-Built for **Build with Gemma 4 | AI Durg Hackathon**  
-**Track:** Vaani – Voice First Translation for Bharat
+Built for the **Build with Gemma 4 | AI Durg Hackathon** under the **Vaani – Voice First Translation for Bharat** track.
 
 <br>
 
@@ -18,48 +17,43 @@ Built for **Build with Gemma 4 | AI Durg Hackathon**
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
+**Live Demo:** https://your-demo-link.vercel.app
+
 </div>
 
 ---
 
-## Live Demo
+# Rethinking Educational Translation
 
-**Application:** https://your-demo-link.vercel.app
+Most translation tools focus on converting words from one language to another.
 
----
+EduArtha focuses on something more important—**understanding**.
 
-# The Problem
+Educational content often contains technical terminology and abstract concepts that become even more confusing after direct translation. EduArtha uses Google's **Gemma 4** to explain concepts in simple Hindi, helping learners understand ideas rather than memorize translated sentences.
 
-Educational resources are increasingly available online, but much of the content is written in English. For many adult and elderly learners in India, understanding these resources becomes challenging—not because of the concepts themselves, but because of the language barrier.
-
-Traditional translation tools often translate sentences literally, making complex topics even harder to understand.
-
-EduVaani approaches this differently.
-
-Instead of translating words, it explains ideas like a teacher—using simple language, preserving important technical terms, and making learning easier in the learner's preferred language.
+Whether it's a textbook paragraph, lecture notes, or study material from a PDF, EduArtha acts like a patient learning companion that simplifies the learning process.
 
 ---
 
-# Features
+# What EduArtha Offers
 
 | Feature | Description |
 |----------|-------------|
-| AI Explanations | Generate easy-to-understand educational explanations using Gemma 4 |
-| Voice Mode | Speak naturally and receive spoken explanations |
-| Speech Recognition | Convert spoken English into text before AI processing |
-| PDF Support | Upload PDFs and generate concept-based explanations |
-| Learning History | View previously generated explanations anytime |
-| Secure Login | Google & Email authentication powered by Supabase |
-| Settings | Personalize your learning experience |
+| AI-Powered Explanations | Convert English educational content into simple Hindi explanations using Gemma 4 |
+| PDF Support | Upload study material directly for AI-powered explanations |
+| Learning Dashboard | Access your workspace through a clean and intuitive interface |
+| Learning History | Revisit previously generated explanations anytime |
+| Personal Settings | Manage your account and application preferences |
+| Secure Authentication | Google Login and Email Login powered by Supabase |
 
 ---
 
-# Tech Stack
+# Built With
 
-| Category | Technologies |
-|-----------|--------------|
+| Category | Technology |
+|-----------|------------|
 | Frontend | Next.js 15, React, TypeScript |
-| Styling | Tailwind CSS, shadcn/ui, Framer Motion |
+| UI | Tailwind CSS, shadcn/ui, Framer Motion |
 | Backend | Next.js API Routes |
 | AI | Google AI Studio API, Gemma 4 |
 | Database | Supabase |
@@ -68,110 +62,85 @@ Instead of translating words, it explains ideas like a teacher—using simple la
 
 ---
 
-# Project Architecture
+# Application Flow
 
 <p align="center">
-
-Replace this section with your architecture diagram.
-
+<img src="./screenshots/architecture.png" width="900"/>
 </p>
 
-```
-          User
-            │
-            ▼
-     Next.js Frontend
-            │
-            ▼
-        API Routes
-            │
-            ▼
-      Prompt Builder
-            │
-            ▼
+```text
+          User Input
+               │
+               ▼
+        Next.js Frontend
+               │
+               ▼
+          API Routes
+               │
+               ▼
+        Prompt Processing
+               │
+               ▼
  Google AI Studio API
-        Gemma 4
-            │
-            ▼
-    AI Generated Response
-            │
-            ▼
-         Supabase
-            │
-            ▼
-        User Interface
+          Gemma 4
+               │
+               ▼
+     AI Generated Explanation
+               │
+               ▼
+           Supabase
+               │
+               ▼
+      Explanation History
 ```
 
 ---
 
-# Application Pages
+# Application Preview
 
-### Landing Page
+## Landing Page
 
-Introduces EduVaani, its purpose, and the learning experience.
-
----
-
-### Login
-
-Secure authentication using Google or Email through Supabase.
+![](./screenshots/landing.png)
 
 ---
 
-### Dashboard
+## Dashboard
 
-Provides quick access to learning features and recently generated explanations.
-
----
-
-### Explanation Page
-
-Paste educational content or upload a PDF to receive AI-generated explanations in the selected language.
+![](./screenshots/dashboard.png)
 
 ---
 
-### History
+## Explanation Page
 
-Displays previously generated explanations for future reference.
-
----
-
-### Settings
-
-Manage preferences and personalize the application experience.
+![](./screenshots/explain.png)
 
 ---
 
-# Screenshots
+## History
 
-Replace the placeholders below with screenshots from your application.
-
-| Landing Page | Dashboard |
-|--------------|-----------|
-| ![](screenshots/landing.png) | ![](screenshots/dashboard.png) |
-
-| Explanation Page | Voice Mode |
-|------------------|------------|
-| ![](screenshots/explain.png) | ![](screenshots/voice.png) |
-
-| History | Settings |
-|----------|----------|
-| ![](screenshots/history.png) | ![](screenshots/settings.png) |
+![](./screenshots/history.png)
 
 ---
 
-# How EduVaani Uses Gemma 4
+## Settings
 
-EduVaani uses **Google's Gemma 4** through the **Google AI Studio API** to generate learner-friendly educational explanations.
+![](./screenshots/settings.png)
 
-Instead of asking the model to translate text, we guide it using carefully structured prompts that encourage it to:
+---
 
-- Explain concepts in simple language
-- Preserve important technical terms
-- Break complex topics into smaller ideas
-- Generate conversational responses suitable for learners
+# Powered by Gemma 4
 
-This teaching-first approach enables EduVaani to deliver explanations that are easier to understand than direct translations.
+EduArtha is built around **Google's Gemma 4**, enabling it to generate educational explanations instead of literal translations.
+
+Each request follows a structured prompting pipeline where the model is instructed to:
+
+- Identify the core concept.
+- Ignore unnecessary wording.
+- Explain ideas in simple Hindi.
+- Preserve important English technical terms.
+- Generate learner-friendly responses.
+
+This approach allows EduArtha to provide explanations that are easier to understand while maintaining the educational context of the original content.
 
 ---
 
@@ -180,13 +149,13 @@ This teaching-first approach enables EduVaani to deliver explanations that are e
 Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/EduVaani.git
+git clone https://github.com/your-username/EduArtha.git
 ```
 
 Navigate into the project.
 
 ```bash
-cd EduVaani
+cd EduArtha
 ```
 
 Install dependencies.
@@ -201,7 +170,7 @@ Run the development server.
 npm run dev
 ```
 
-The application will be available at:
+Visit:
 
 ```
 http://localhost:3000
@@ -225,30 +194,29 @@ SUPABASE_ANON_KEY=
 
 # Team
 
-### NeuroStars
+## NeuroStars
 
-Built with the vision of making educational content more understandable and accessible through multilingual AI-powered learning.
-
----
-
-# Hackathon
-
-**Build with Gemma 4 | AI Durg Hackathon**
-
-**Track:** Vaani – Voice First Translation for Bharat
+Built during the **Build with Gemma 4 | AI Durg Hackathon**.
 
 ---
 
-# License
+# Acknowledgements
 
-This project is licensed under the **MIT License**.
+Special thanks to:
+
+- Google DeepMind
+- Google AI Studio
+- Gemma 4
+- Supabase
+- Vercel
+- Next.js
 
 ---
 
 <div align="center">
 
-### Learning should never be limited by language.
+### Education becomes meaningful when learners understand the concept—not just the language.
 
-**EduVaani** combines the power of **Gemma 4**, voice interaction, and multilingual AI to make educational content easier to understand for learners across India.
+**EduArtha** is our step toward making quality education more accessible through AI-powered concept explanations.
 
 </div>
